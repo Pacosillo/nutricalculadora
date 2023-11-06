@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Nutrientes</title>
+  <!-- Hoja de Estilos CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <h1>Calculadora de Nutrientes</h1>
+  <form>
+    <div>
+      <label for="peso-papas">Peso de papas (g):</label>
+      <input type="number" id="peso-papas">
+    </div>
+    <div>
+      <label for="peso-arroz">Peso de arroz (g):</label>
+      <input type="number" id="peso-arroz">
+    </div>
+    <div>
+      <label for="cantidad-huevo">Cantidad de huevos:</label>
+      <input type="number" id="cantidad-huevo">
+    </div>
+    <div>
+      <label for="peso-queso">Peso de queso (g):</label>
+      <input type="number" id="peso-queso">
+    </div>
+    <button type="button" onclick="calcularNutrientes()">Calcular</button>
+    <button type="button" onclick="limpiarFormulario()">Borrar</button>
+    <div id="resultados"></div>
+  </form>
+  <!-- Script JavaScript -->
+  <script src="nutricalculadora.js"></script>
+</body>
+
+</html>
